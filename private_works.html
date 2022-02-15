@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.simplecss.org/simple.min.css">
+    <title>henteko's portfolio - Private Works</title>
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="/">Home</a>
+      <a href="/works.html">Works</a>
+      <a href="/private_works.html" class="current">Private Works</a>
+    </nav>
+    <h1>Private Works</h1>
+    <p>個人活動の記録です</p>
+  </header>
+
+  <main>
+  </main>
+
+  <script>
+    var year = new Date().getFullYear();
+    var txt = document.createTextNode("© " + year + " henteko");
+    var p = document.createElement('p');
+    var footer = document.createElement('footer');
+
+    p.appendChild(txt);
+    footer.appendChild(p);
+    document.body.appendChild(footer);
+  </script>
+</body>
+</html>
