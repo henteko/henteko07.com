@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ja">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,20 +10,73 @@
     <meta name="twitter:card" content="summary">
     <link rel="stylesheet" href="https://cdn.simplecss.org/simple.min.css">
     <title>henteko's portfolio</title>
-    <script>
-      const language = navigator.language;
-      if (language === "ja" || language === "ja-JP") {
-        location.replace("/ja");
-      } else {
-        location.replace("/en");
-      }
-    </script>
 </head>
-<body style="text-align: center;">
-  <h1>Welcome henteko's portfolio</h1>
-  <nav>
-    <a href="/ja">日本語</a>
-    <a href="/en">English</a>
-  </nav>
+<body>
+  <header>
+    <nav>
+      <a href="/">日本語</a>
+      <a href="/en">English</a>
+    </nav>
+    <h1>henteko's portfolio</h1>
+    <p>ものづくりが大好きです</p>
+  </header>
+
+  <main>
+    <h2>About</h2>
+    <p>
+      <img src="/icon.png" width="100px" />
+      <div>
+        Kenta Imai (henteko)<br />
+        Software Engineer/Creator
+      </div>
+    </p>
+    <p>
+      インフラからフロントエンド、ネイティブアプリなどの<mark>プロダクト開発及びプロジェクトマネジメント</mark>を行えます。<br/>
+      また開発業務に限らず、カスタマーサポートやバックオフィス、それらの管理/運用など会社に関わることも幅広く行えます。<br />
+      <br/>
+      特にサービス開発初期にありがちな、<mark>開発以外にもやることが沢山ある環境下</mark>が得意です。
+    </p>
+    <p>
+      本業とは別で、技術書の執筆、3Dモデル作成、Webサービス/ゲームの開発、漫画制作などの個人/チーム活動なども行っています。
+    </p>
+
+    <h2>Career</h2>
+    <p>
+      大学在学中にゲーム、開発ツール、Webサービス、ハードウェアなど様々なものを開発していました。<br />
+    </p>
+    <p>
+      大学卒業後、株式会社ミクシィに新卒入社し<a href="https://deploygate.com/" target="_blank">DeployGate</a>の開発、SNS mixiの開発に従事。<br />
+      その後独立し、<a href="https://deploygate.com/about" target="_blank">株式会社デプロイゲート</a>の共同創業者として<a href="https://deploygate.com/" target="_blank">DeployGate</a>の開発/運用/プロジェクトマネジメントを行っています。
+    </p>
+    <p>
+      詳しい業務経歴や個人活動については、以下をご参照ください。
+      <nav>
+        <a href="/works.html" class="current">Works</a>
+        <a href="/private_works.html">Private Works</a>
+      </nav>
+    </p>
+
+    <h2>Contact</h2>
+    <p>お仕事のご依頼やご相談などありましたら <code>henteko07@gmail.com</code> までご連絡ください。</p>
+
+    <h2>Links</h2>
+    <nav>
+      <a href="https://github.com/henteko" target="_blank">GitHub</a>
+      <a href="https://twitter.com/henteko07" target="_blank">Twitter</a>
+      <a href="https://medium.com/@henteko07" target="_blank">Blog</a>
+      <a href="https://voxel.henteko07.com" target="_blank">Voxel</a>
+    </nav>
+  </main>
+
+  <script>
+    var year = new Date().getFullYear();
+    var txt = document.createTextNode("© " + year + " henteko");
+    var p = document.createElement('p');
+    var footer = document.createElement('footer');
+
+    p.appendChild(txt);
+    footer.appendChild(p);
+    document.body.appendChild(footer);
+  </script>
 </body>
 </html>
