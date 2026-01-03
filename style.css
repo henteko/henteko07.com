@@ -1,0 +1,269 @@
+/* Modern Simple Portfolio Styles */
+
+:root {
+  --accent: #2563eb;
+  --accent-light: #3b82f6;
+  --accent-bg: #eff6ff;
+  --text-main: #1e293b;
+  --text-secondary: #64748b;
+  --bg-main: #ffffff;
+  --bg-secondary: #f8fafc;
+  --border: #e2e8f0;
+  --shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  --shadow-lg: 0 10px 40px rgba(0, 0, 0, 0.1);
+  --radius: 12px;
+}
+
+/* Override Simple.css variables */
+:root {
+  --accent: #2563eb;
+  --accent-hover: #1d4ed8;
+}
+
+body {
+  background: var(--bg-secondary);
+  color: var(--text-main);
+}
+
+/* Header */
+header {
+  background: linear-gradient(135deg, #1e3a8a 0%, #2563eb 100%);
+  color: white;
+  padding: 3rem 1.5rem;
+  margin-bottom: 2rem;
+  border-radius: 0 0 2rem 2rem;
+}
+
+header h1 {
+  color: white;
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+header p {
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 1.1rem;
+  margin: 0;
+}
+
+header nav {
+  margin-bottom: 1.5rem;
+}
+
+header nav a {
+  color: rgba(255, 255, 255, 0.8);
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  border-radius: 2rem;
+  transition: all 0.2s ease;
+  font-size: 0.9rem;
+}
+
+header nav a:hover,
+header nav a.current {
+  background: rgba(255, 255, 255, 0.2);
+  color: white;
+}
+
+/* Main content */
+main {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 1.5rem 3rem;
+}
+
+/* Section headings */
+h2 {
+  color: var(--text-main);
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-top: 2.5rem;
+  margin-bottom: 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid var(--accent);
+  display: inline-block;
+}
+
+/* About section - Profile card */
+.profile-card {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  background: var(--bg-main);
+  padding: 1.5rem;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  margin-bottom: 1.5rem;
+}
+
+.profile-card img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid var(--accent-bg);
+}
+
+.profile-card .profile-info {
+  flex: 1;
+}
+
+.profile-card .profile-name {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--text-main);
+  margin: 0 0 0.25rem 0;
+}
+
+.profile-card .profile-title {
+  color: var(--accent);
+  font-size: 0.95rem;
+  margin: 0;
+}
+
+/* Skills section */
+.skills-category {
+  margin-bottom: 1rem;
+}
+
+.skills-category strong {
+  display: block;
+  color: var(--text-secondary);
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 0.5rem;
+}
+
+mark {
+  background: var(--accent-bg);
+  color: var(--accent);
+  padding: 0.3rem 0.75rem;
+  border-radius: 2rem;
+  font-size: 0.875rem;
+  margin: 0.25rem 0.25rem 0.25rem 0;
+  display: inline-block;
+  border: 1px solid transparent;
+  transition: all 0.2s ease;
+}
+
+mark:hover {
+  border-color: var(--accent);
+  transform: translateY(-1px);
+}
+
+/* Career section */
+.career-item {
+  background: var(--bg-main);
+  padding: 1.25rem;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  margin-bottom: 1rem;
+  border-left: 3px solid var(--accent);
+}
+
+.career-item p {
+  margin: 0;
+}
+
+.career-item h3 {
+  color: var(--accent);
+  font-size: 1rem;
+  font-weight: 600;
+  margin: 0 0 0.25rem 0;
+}
+
+.career-item .career-role {
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+  margin-bottom: 0.75rem;
+}
+
+/* Contact section */
+.contact-box {
+  background: var(--bg-main);
+  padding: 1.5rem;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  text-align: center;
+}
+
+.contact-box code {
+  background: var(--accent-bg);
+  color: var(--accent);
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+}
+
+/* Links section */
+.links-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.links-grid a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  background: var(--bg-main);
+  color: var(--text-main);
+  text-decoration: none;
+  padding: 1rem;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  font-weight: 500;
+  transition: all 0.2s ease;
+  border: 1px solid var(--border);
+}
+
+.links-grid a:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-lg);
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 2rem;
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+  header {
+    padding: 2rem 1rem;
+    border-radius: 0 0 1.5rem 1.5rem;
+  }
+
+  header h1 {
+    font-size: 2rem;
+  }
+
+  .profile-card {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .links-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Smooth transitions */
+a, mark, button {
+  transition: all 0.2s ease;
+}
+
+/* Description text styling */
+.description {
+  color: var(--text-secondary);
+  line-height: 1.8;
+}

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ja">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,13 +9,14 @@
     <meta property="og:title" content="henteko portfolio">
     <meta name="twitter:card" content="summary">
     <link rel="stylesheet" href="https://cdn.simplecss.org/simple.min.css">
+    <link rel="stylesheet" href="/style.css">
     <title>henteko portfolio</title>
 </head>
 <body>
   <header>
     <nav>
       <a href="/">日本語</a>
-      <a href="/en">English</a>
+      <a href="/en" class="current">English</a>
     </nav>
     <h1>henteko portfolio</h1>
     <p>I like making things.</p>
@@ -23,18 +24,27 @@
 
   <main>
     <h2>About</h2>
-    <p>
-      <img src="/icon.png" width="100px" />
-      <div>
-        Kenta Imai (henteko)<br />
-        Software Engineer/Creator
+    <div class="profile-card">
+      <img src="/icon.png" alt="henteko" />
+      <div class="profile-info">
+        <p class="profile-name">Kenta Imai (henteko)</p>
+        <p class="profile-title">Software Engineer / Creator</p>
       </div>
+    </div>
+    <p class="description">
+      I specialize in product development and product management, covering everything from infrastructure to front-end and native applications.
+      In addition to development work, I am extensively involved in various aspects of company operations, including customer support and back-office tasks.
     </p>
-    <p> I specialize in product development and product management, covering everything from infrastructure to front-end and native applications.<br/> In addition to development work, I am extensively involved in various aspects of company operations, including customer support and back-office tasks.<br/> <br/> I thrive in environments typical of early-stage development or small teams, where there are many responsibilities beyond just development. </p> <p> Outside of my primary profession, I engage in individual and team activities such as authoring technical books, creating 3D models, developing web services and games, and producing manga. </p>
+    <p class="description">
+      I thrive in environments typical of early-stage development or small teams, where there are many responsibilities beyond just development.
+    </p>
+    <p class="description">
+      Outside of my primary profession, I engage in individual and team activities such as authoring technical books, creating 3D models, developing web services and games, and producing manga.
+    </p>
 
     <h2>Skills</h2>
-    <p>
-      <strong>Web: </strong>
+    <div class="skills-category">
+      <strong>Web</strong>
       <mark>CSS</mark>
       <mark>TypeScript</mark>
       <mark>React</mark>
@@ -43,44 +53,55 @@
       <mark>Chrome Extension</mark>
       <mark>Ruby on Rails</mark>
       <mark>Hono</mark>
-    </p>
-    <p>
-      <strong>Mobile: </strong>
+    </div>
+    <div class="skills-category">
+      <strong>Mobile</strong>
       <mark>iOS/iPadOS</mark>
       <mark>Swift</mark>
       <mark>Objective-C</mark>
       <mark>Android</mark>
       <mark>Gradle</mark>
       <mark>SCEP</mark>
-    </p>
-    <p>
-      <strong>Infrastructure: </strong>
+    </div>
+    <div class="skills-category">
+      <strong>Infrastructure</strong>
       <mark>AWS</mark>
       <mark>Cloudflare</mark>
       <mark>Docker</mark>
-    </p>
-    <p>
-      <strong>Generation AI: </strong>
+    </div>
+    <div class="skills-category">
+      <strong>Generative AI</strong>
       <mark>ChatGPT</mark>
       <mark>WebLLM</mark>
       <mark>Stable Diffusion</mark>
       <mark>Whisper</mark>
-    </p>
+    </div>
 
     <h2>Career</h2>
-    <p> During my university years, I developed a variety of projects including games, development tools, web services, and hardware.<br /> </p> <p> After graduating from university, I joined <a href="https://mixi.co.jp/" target="_blank">MIXI, Inc.</a> as a new graduate, where I worked on the development of <a href="https://deploygate.com/" target="_blank">DeployGate</a> and the Android/iOS apps for the social network mixi.<br /> Subsequently, as a co-founder and Director CPO of <a href="https://deploygate.com/about" target="_blank">DeployGate Inc.</a>, I have been involved in the development, operation, product management, and human resources of <a href="https://deploygate.com/" target="_blank">DeployGate</a>. </p>
+    <div class="career-item">
+      <p>During my university years, I developed a variety of projects including games, development tools, web services, and hardware.</p>
+    </div>
+    <div class="career-item">
+      <p>
+        After graduating from university, I joined <a href="https://mixi.co.jp/" target="_blank">MIXI, Inc.</a> as a new graduate, where I worked on the development of <a href="https://deploygate.com/" target="_blank">DeployGate</a> and the Android/iOS apps for the social network mixi.<br />
+        Subsequently, as a co-founder and Director CPO of <a href="https://deploygate.com/about" target="_blank">DeployGate Inc.</a>, I have been involved in the development, operation, product management, and human resources of <a href="https://deploygate.com/" target="_blank">DeployGate</a>.
+      </p>
+    </div>
 
     <h2>Contact</h2>
-    Please contact me at <code>henteko07@gmail.com</code> if you have any job requests or inquiries.
+    <div class="contact-box">
+      <p>Please contact me if you have any job requests or inquiries.</p>
+      <code>henteko07@gmail.com</code>
+    </div>
 
     <h2>Links</h2>
-    <nav>
+    <div class="links-grid">
       <a href="https://github.com/henteko" target="_blank">GitHub</a>
       <a href="https://twitter.com/henteko07" target="_blank">Twitter</a>
       <a href="https://blog.henteko07.com" target="_blank">Blog</a>
       <a href="https://miso-lab.booth.pm/" target="_blank">BOOTH</a>
       <a href="https://voxel.henteko07.com" target="_blank">Voxel</a>
-    </nav>
+    </div>
   </main>
 
   <script>
