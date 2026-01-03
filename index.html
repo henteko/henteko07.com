@@ -9,12 +9,13 @@
     <meta property="og:title" content="henteko portfolio">
     <meta name="twitter:card" content="summary">
     <link rel="stylesheet" href="https://cdn.simplecss.org/simple.min.css">
+    <link rel="stylesheet" href="/style.css">
     <title>henteko portfolio</title>
 </head>
 <body>
   <header>
     <nav>
-      <a href="/">日本語</a>
+      <a href="/" class="current">日本語</a>
       <a href="/en">English</a>
     </nav>
     <h1>henteko portfolio</h1>
@@ -23,26 +24,27 @@
 
   <main>
     <h2>About</h2>
-    <p>
-      <img src="/icon.png" width="100px" />
-      <div>
-        Kenta Imai (henteko)<br />
-        Software Engineer/Creator
+    <div class="profile-card">
+      <img src="/icon.png" alt="henteko" />
+      <div class="profile-info">
+        <p class="profile-name">Kenta Imai (henteko)</p>
+        <p class="profile-title">Software Engineer / Creator</p>
       </div>
-    </p>
-    <p>
+    </div>
+    <p class="description">
       インフラからフロントエンド、ネイティブアプリなどのプロダクト開発及びプロダクトマネジメントを行っています。
-      また開発業務に限らず、カスタマーサポートやバックオフィスなど会社の運営に関わることも幅広く行っています。<br />
-      <br/>
+      また開発業務に限らず、カスタマーサポートやバックオフィスなど会社の運営に関わることも幅広く行っています。
+    </p>
+    <p class="description">
       特に開発初期やスモールチームにありがちな、開発以外にもやることが沢山あるような環境が得意です。
     </p>
-    <p>
+    <p class="description">
       本業とは別に技術書の執筆、3Dモデル作成、Webサービス/ゲームの開発、漫画制作などの個人/チーム活動なども行っています。
     </p>
 
     <h2>Skills</h2>
-    <p>
-      <strong>Web: </strong>
+    <div class="skills-category">
+      <strong>Web</strong>
       <mark>CSS</mark>
       <mark>TypeScript</mark>
       <mark>React</mark>
@@ -51,50 +53,55 @@
       <mark>Chrome Extension</mark>
       <mark>Ruby on Rails</mark>
       <mark>Hono</mark>
-    </p>
-    <p>
-      <strong>Mobile: </strong>
+    </div>
+    <div class="skills-category">
+      <strong>Mobile</strong>
       <mark>iOS/iPadOS</mark>
       <mark>Swift</mark>
       <mark>Objective-C</mark>
       <mark>Android</mark>
       <mark>Gradle</mark>
       <mark>SCEP</mark>
-    </p>
-    <p>
-      <strong>Infrastructure: </strong>
+    </div>
+    <div class="skills-category">
+      <strong>Infrastructure</strong>
       <mark>AWS</mark>
       <mark>Cloudflare</mark>
       <mark>Docker</mark>
-    </p>
-    <p>
-      <strong>Generation AI: </strong>
+    </div>
+    <div class="skills-category">
+      <strong>Generative AI</strong>
       <mark>ChatGPT</mark>
       <mark>WebLLM</mark>
       <mark>Stable Diffusion</mark>
       <mark>Whisper</mark>
-    </p>
+    </div>
 
     <h2>Career</h2>
-    <p>
-      大学在学中にゲーム、開発ツール、Webサービス、ハードウェアなど様々なものを開発していました。<br />
-    </p>
-    <p>
-      大学卒業後、株式会社MIXIに新卒入社し<a href="https://deploygate.com/" target="_blank">DeployGate</a>の開発とSNS mixiのAndroid/iOSアプリ開発に従事。<br />
-      その後<a href="https://deploygate.com/about" target="_blank">株式会社デプロイゲート</a>の共同創業者兼取締役CPOとして<a href="https://deploygate.com/" target="_blank">DeployGate</a>の開発/運用/プロダクトマネジメントや人事などを行っています。
-    </p>
+    <div class="career-item">
+      <p>大学在学中にゲーム、開発ツール、Webサービス、ハードウェアなど様々なものを開発していました。</p>
+    </div>
+    <div class="career-item">
+      <p>
+        大学卒業後、株式会社MIXIに新卒入社し<a href="https://deploygate.com/" target="_blank">DeployGate</a>の開発とSNS mixiのAndroid/iOSアプリ開発に従事。<br />
+        その後<a href="https://deploygate.com/about" target="_blank">株式会社デプロイゲート</a>の共同創業者兼取締役CPOとして<a href="https://deploygate.com/" target="_blank">DeployGate</a>の開発/運用/プロダクトマネジメントや人事などを行っています。
+      </p>
+    </div>
 
     <h2>Contact</h2>
-    <p>お仕事のご依頼やご相談などありましたら <code>henteko07@gmail.com</code> までご連絡ください。</p>
+    <div class="contact-box">
+      <p>お仕事のご依頼やご相談などありましたら下記までご連絡ください。</p>
+      <code>henteko07@gmail.com</code>
+    </div>
 
     <h2>Links</h2>
-    <nav>
+    <div class="links-grid">
       <a href="https://github.com/henteko" target="_blank">GitHub</a>
       <a href="https://twitter.com/henteko07" target="_blank">Twitter</a>
       <a href="https://blog.henteko07.com" target="_blank">Blog</a>
       <a href="https://miso-lab.booth.pm/" target="_blank">BOOTH</a>
       <a href="https://voxel.henteko07.com" target="_blank">Voxel</a>
-    </nav>
+    </div>
   </main>
 
   <script>
