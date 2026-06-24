@@ -3,116 +3,140 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="henteko (Kenta Imai) のポートフォリオ。ソフトウェアエンジニア / クリエイター。">
     <meta property="og:url" content="https://henteko07.com/">
     <meta property="og:type" content="website">
     <meta property="og:image" content="https://henteko07.com/icon.png">
     <meta property="og:title" content="henteko portfolio">
     <meta name="twitter:card" content="summary">
-    <link rel="stylesheet" href="https://cdn.simplecss.org/simple.min.css">
     <link rel="stylesheet" href="/style.css">
     <title>henteko portfolio</title>
 </head>
 <body>
-  <header>
-    <nav>
-      <a href="/" class="current">日本語</a>
-      <a href="/en">English</a>
-    </nav>
-    <h1>henteko portfolio</h1>
-    <p>ものづくりが大好きです</p>
-  </header>
+  <div class="wrap">
+    <header class="topbar">
+      <a href="/" class="brand">henteko</a>
+      <nav class="lang">
+        <a href="/" class="current">JA</a>
+        <a href="/en">EN</a>
+      </nav>
+    </header>
 
-  <main>
-    <h2>About</h2>
-    <div class="profile-card">
-      <img src="/icon.png" alt="henteko" />
-      <div class="profile-info">
-        <p class="profile-name">Kenta Imai (henteko)</p>
-        <p class="profile-title">Software Engineer / Creator</p>
-      </div>
-    </div>
-    <p class="description">
-      インフラからフロントエンド、ネイティブアプリなどのプロダクト開発及びプロダクトマネジメントを行っています。
-      また開発業務に限らず、カスタマーサポートやバックオフィスなど会社の運営に関わることも幅広く行っています。
-    </p>
-    <p class="description">
-      特に開発初期やスモールチームにありがちな、開発以外にもやることが沢山あるような環境が得意です。
-    </p>
-    <p class="description">
-      本業とは別に技術書の執筆、3Dモデル作成、Webサービス/ゲームの開発、漫画制作などの個人/チーム活動なども行っています。
-    </p>
+    <section class="hero">
+      <p class="eyebrow">Portfolio</p>
+      <h1>ものづくりが<br>大好きです。</h1>
+      <p class="tagline">インフラからフロントエンド、ネイティブアプリまで。つくることのすべてを。</p>
+    </section>
 
-    <h2>Skills</h2>
-    <div class="skills-category">
-      <strong>Web</strong>
-      <mark>CSS</mark>
-      <mark>TypeScript</mark>
-      <mark>React</mark>
-      <mark>WebAssembly</mark>
-      <mark>Electron</mark>
-      <mark>Chrome Extension</mark>
-      <mark>Ruby on Rails</mark>
-      <mark>Hono</mark>
-    </div>
-    <div class="skills-category">
-      <strong>Mobile</strong>
-      <mark>iOS/iPadOS</mark>
-      <mark>Swift</mark>
-      <mark>Objective-C</mark>
-      <mark>Android</mark>
-      <mark>Gradle</mark>
-      <mark>SCEP</mark>
-    </div>
-    <div class="skills-category">
-      <strong>Infrastructure</strong>
-      <mark>AWS</mark>
-      <mark>Cloudflare</mark>
-      <mark>Docker</mark>
-    </div>
-    <div class="skills-category">
-      <strong>Generative AI</strong>
-      <mark>ChatGPT</mark>
-      <mark>WebLLM</mark>
-      <mark>Stable Diffusion</mark>
-      <mark>Whisper</mark>
-    </div>
+    <main>
+      <section class="about">
+        <div class="section-head">
+          <span class="idx">01</span>
+          <h2>About</h2>
+        </div>
+        <div class="profile">
+          <img src="/icon.png" alt="henteko" />
+          <div>
+            <p class="name">Kenta Imai (henteko)</p>
+            <p class="role">Software Engineer / Creator</p>
+          </div>
+        </div>
+        <p>インフラからフロントエンド、ネイティブアプリなどのプロダクト開発及びプロダクトマネジメントを行っています。また開発業務に限らず、カスタマーサポートやバックオフィスなど会社の運営に関わることも幅広く行っています。</p>
+        <p>特に開発初期やスモールチームにありがちな、開発以外にもやることが沢山あるような環境が得意です。</p>
+        <p>本業とは別に技術書の執筆、3Dモデル作成、Webサービス/ゲームの開発、漫画制作などの個人/チーム活動なども行っています。</p>
+      </section>
 
-    <h2>Career</h2>
-    <div class="career-item">
-      <p>大学在学中にゲーム、開発ツール、Webサービス、ハードウェアなど様々なものを開発していました。</p>
-    </div>
-    <div class="career-item">
-      <p>
-        大学卒業後、株式会社MIXIに新卒入社し<a href="https://deploygate.com/" target="_blank">DeployGate</a>の開発とSNS mixiのAndroid/iOSアプリ開発に従事。<br />
-        その後<a href="https://deploygate.com/about" target="_blank">株式会社デプロイゲート</a>の共同創業者兼取締役CPOとして<a href="https://deploygate.com/" target="_blank">DeployGate</a>の開発/運用/プロダクトマネジメントや人事などを行っています。
-      </p>
-    </div>
+      <section class="skills">
+        <div class="section-head">
+          <span class="idx">02</span>
+          <h2>Skills</h2>
+        </div>
+        <div class="skill-group">
+          <span class="label">Web</span>
+          <div class="tags">
+            <span>CSS</span>
+            <span>TypeScript</span>
+            <span>React</span>
+            <span>WebAssembly</span>
+            <span>Electron</span>
+            <span>Chrome Extension</span>
+            <span>Ruby on Rails</span>
+            <span>Hono</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <span class="label">Mobile</span>
+          <div class="tags">
+            <span>iOS/iPadOS</span>
+            <span>Swift</span>
+            <span>Objective-C</span>
+            <span>Android</span>
+            <span>Gradle</span>
+            <span>SCEP</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <span class="label">Infra</span>
+          <div class="tags">
+            <span>AWS</span>
+            <span>Cloudflare</span>
+            <span>Docker</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <span class="label">Generative AI</span>
+          <div class="tags">
+            <span>ChatGPT</span>
+            <span>WebLLM</span>
+            <span>Stable Diffusion</span>
+            <span>Whisper</span>
+          </div>
+        </div>
+      </section>
 
-    <h2>Contact</h2>
-    <div class="contact-box">
-      <p>お仕事のご依頼やご相談などありましたら下記までご連絡ください。</p>
-      <code>henteko07@gmail.com</code>
-    </div>
+      <section class="career">
+        <div class="section-head">
+          <span class="idx">03</span>
+          <h2>Career</h2>
+        </div>
+        <div class="career-item">
+          <p>大学在学中にゲーム、開発ツール、Webサービス、ハードウェアなど様々なものを開発していました。</p>
+        </div>
+        <div class="career-item">
+          <p>大学卒業後、株式会社MIXIに新卒入社し<a href="https://deploygate.com/" target="_blank" rel="noopener">DeployGate</a>の開発とSNS mixiのAndroid/iOSアプリ開発に従事。その後<a href="https://deploygate.com/about" target="_blank" rel="noopener">株式会社デプロイゲート</a>の共同創業者兼取締役CPOとして<a href="https://deploygate.com/" target="_blank" rel="noopener">DeployGate</a>の開発/運用/プロダクトマネジメントや人事などを行っています。</p>
+        </div>
+      </section>
 
-    <h2>Links</h2>
-    <div class="links-grid">
-      <a href="https://github.com/henteko" target="_blank">GitHub</a>
-      <a href="https://twitter.com/henteko07" target="_blank">Twitter</a>
-      <a href="https://blog.henteko07.com" target="_blank">Blog</a>
-      <a href="https://miso-lab.booth.pm/" target="_blank">BOOTH</a>
-      <a href="https://voxel.henteko07.com" target="_blank">Voxel</a>
-    </div>
-  </main>
+      <section class="contact">
+        <div class="section-head">
+          <span class="idx">04</span>
+          <h2>Contact</h2>
+        </div>
+        <p>お仕事のご依頼やご相談などありましたら下記までご連絡ください。</p>
+        <a class="mail" href="mailto:henteko07@gmail.com">henteko07@gmail.com</a>
+      </section>
+
+      <section class="links-section">
+        <div class="section-head">
+          <span class="idx">05</span>
+          <h2>Links</h2>
+        </div>
+        <nav class="links">
+          <a href="https://github.com/henteko" target="_blank" rel="noopener">GitHub <span class="arrow">↗</span></a>
+          <a href="https://twitter.com/henteko07" target="_blank" rel="noopener">Twitter <span class="arrow">↗</span></a>
+          <a href="https://blog.henteko07.com" target="_blank" rel="noopener">Blog <span class="arrow">↗</span></a>
+          <a href="https://miso-lab.booth.pm/" target="_blank" rel="noopener">BOOTH <span class="arrow">↗</span></a>
+          <a href="https://voxel.henteko07.com" target="_blank" rel="noopener">Voxel <span class="arrow">↗</span></a>
+        </nav>
+      </section>
+    </main>
+
+    <footer id="footer"></footer>
+  </div>
 
   <script>
     var year = new Date().getFullYear();
-    var txt = document.createTextNode("© " + year + " henteko");
-    var p = document.createElement('p');
-    var footer = document.createElement('footer');
-
-    p.appendChild(txt);
-    footer.appendChild(p);
-    document.body.appendChild(footer);
+    document.getElementById('footer').textContent = "© " + year + " henteko";
   </script>
 </body>
 </html>

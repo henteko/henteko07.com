@@ -3,116 +3,140 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio of henteko (Kenta Imai). Software Engineer / Creator.">
     <meta property="og:url" content="https://henteko07.com/">
     <meta property="og:type" content="website">
     <meta property="og:image" content="https://henteko07.com/icon.png">
     <meta property="og:title" content="henteko portfolio">
     <meta name="twitter:card" content="summary">
-    <link rel="stylesheet" href="https://cdn.simplecss.org/simple.min.css">
     <link rel="stylesheet" href="/style.css">
     <title>henteko portfolio</title>
 </head>
 <body>
-  <header>
-    <nav>
-      <a href="/">日本語</a>
-      <a href="/en" class="current">English</a>
-    </nav>
-    <h1>henteko portfolio</h1>
-    <p>I like making things.</p>
-  </header>
+  <div class="wrap">
+    <header class="topbar">
+      <a href="/en" class="brand">henteko</a>
+      <nav class="lang">
+        <a href="/">JA</a>
+        <a href="/en" class="current">EN</a>
+      </nav>
+    </header>
 
-  <main>
-    <h2>About</h2>
-    <div class="profile-card">
-      <img src="/icon.png" alt="henteko" />
-      <div class="profile-info">
-        <p class="profile-name">Kenta Imai (henteko)</p>
-        <p class="profile-title">Software Engineer / Creator</p>
-      </div>
-    </div>
-    <p class="description">
-      I specialize in product development and product management, covering everything from infrastructure to front-end and native applications.
-      In addition to development work, I am extensively involved in various aspects of company operations, including customer support and back-office tasks.
-    </p>
-    <p class="description">
-      I thrive in environments typical of early-stage development or small teams, where there are many responsibilities beyond just development.
-    </p>
-    <p class="description">
-      Outside of my primary profession, I engage in individual and team activities such as authoring technical books, creating 3D models, developing web services and games, and producing manga.
-    </p>
+    <section class="hero">
+      <p class="eyebrow">Portfolio</p>
+      <h1>I like<br>making things.</h1>
+      <p class="tagline">From infrastructure to front-end and native apps — everything about building.</p>
+    </section>
 
-    <h2>Skills</h2>
-    <div class="skills-category">
-      <strong>Web</strong>
-      <mark>CSS</mark>
-      <mark>TypeScript</mark>
-      <mark>React</mark>
-      <mark>WebAssembly</mark>
-      <mark>Electron</mark>
-      <mark>Chrome Extension</mark>
-      <mark>Ruby on Rails</mark>
-      <mark>Hono</mark>
-    </div>
-    <div class="skills-category">
-      <strong>Mobile</strong>
-      <mark>iOS/iPadOS</mark>
-      <mark>Swift</mark>
-      <mark>Objective-C</mark>
-      <mark>Android</mark>
-      <mark>Gradle</mark>
-      <mark>SCEP</mark>
-    </div>
-    <div class="skills-category">
-      <strong>Infrastructure</strong>
-      <mark>AWS</mark>
-      <mark>Cloudflare</mark>
-      <mark>Docker</mark>
-    </div>
-    <div class="skills-category">
-      <strong>Generative AI</strong>
-      <mark>ChatGPT</mark>
-      <mark>WebLLM</mark>
-      <mark>Stable Diffusion</mark>
-      <mark>Whisper</mark>
-    </div>
+    <main>
+      <section class="about">
+        <div class="section-head">
+          <span class="idx">01</span>
+          <h2>About</h2>
+        </div>
+        <div class="profile">
+          <img src="/icon.png" alt="henteko" />
+          <div>
+            <p class="name">Kenta Imai (henteko)</p>
+            <p class="role">Software Engineer / Creator</p>
+          </div>
+        </div>
+        <p>I specialize in product development and product management, covering everything from infrastructure to front-end and native applications. In addition to development work, I am extensively involved in various aspects of company operations, including customer support and back-office tasks.</p>
+        <p>I thrive in environments typical of early-stage development or small teams, where there are many responsibilities beyond just development.</p>
+        <p>Outside of my primary profession, I engage in individual and team activities such as authoring technical books, creating 3D models, developing web services and games, and producing manga.</p>
+      </section>
 
-    <h2>Career</h2>
-    <div class="career-item">
-      <p>During my university years, I developed a variety of projects including games, development tools, web services, and hardware.</p>
-    </div>
-    <div class="career-item">
-      <p>
-        After graduating from university, I joined <a href="https://mixi.co.jp/" target="_blank">MIXI, Inc.</a> as a new graduate, where I worked on the development of <a href="https://deploygate.com/" target="_blank">DeployGate</a> and the Android/iOS apps for the social network mixi.<br />
-        Subsequently, as a co-founder and Director CPO of <a href="https://deploygate.com/about" target="_blank">DeployGate Inc.</a>, I have been involved in the development, operation, product management, and human resources of <a href="https://deploygate.com/" target="_blank">DeployGate</a>.
-      </p>
-    </div>
+      <section class="skills">
+        <div class="section-head">
+          <span class="idx">02</span>
+          <h2>Skills</h2>
+        </div>
+        <div class="skill-group">
+          <span class="label">Web</span>
+          <div class="tags">
+            <span>CSS</span>
+            <span>TypeScript</span>
+            <span>React</span>
+            <span>WebAssembly</span>
+            <span>Electron</span>
+            <span>Chrome Extension</span>
+            <span>Ruby on Rails</span>
+            <span>Hono</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <span class="label">Mobile</span>
+          <div class="tags">
+            <span>iOS/iPadOS</span>
+            <span>Swift</span>
+            <span>Objective-C</span>
+            <span>Android</span>
+            <span>Gradle</span>
+            <span>SCEP</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <span class="label">Infra</span>
+          <div class="tags">
+            <span>AWS</span>
+            <span>Cloudflare</span>
+            <span>Docker</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <span class="label">Generative AI</span>
+          <div class="tags">
+            <span>ChatGPT</span>
+            <span>WebLLM</span>
+            <span>Stable Diffusion</span>
+            <span>Whisper</span>
+          </div>
+        </div>
+      </section>
 
-    <h2>Contact</h2>
-    <div class="contact-box">
-      <p>Please contact me if you have any job requests or inquiries.</p>
-      <code>henteko07@gmail.com</code>
-    </div>
+      <section class="career">
+        <div class="section-head">
+          <span class="idx">03</span>
+          <h2>Career</h2>
+        </div>
+        <div class="career-item">
+          <p>During my university years, I developed a variety of projects including games, development tools, web services, and hardware.</p>
+        </div>
+        <div class="career-item">
+          <p>After graduating from university, I joined <a href="https://mixi.co.jp/" target="_blank" rel="noopener">MIXI, Inc.</a> as a new graduate, where I worked on the development of <a href="https://deploygate.com/" target="_blank" rel="noopener">DeployGate</a> and the Android/iOS apps for the social network mixi. Subsequently, as a co-founder and Director CPO of <a href="https://deploygate.com/about" target="_blank" rel="noopener">DeployGate Inc.</a>, I have been involved in the development, operation, product management, and human resources of <a href="https://deploygate.com/" target="_blank" rel="noopener">DeployGate</a>.</p>
+        </div>
+      </section>
 
-    <h2>Links</h2>
-    <div class="links-grid">
-      <a href="https://github.com/henteko" target="_blank">GitHub</a>
-      <a href="https://twitter.com/henteko07" target="_blank">Twitter</a>
-      <a href="https://blog.henteko07.com" target="_blank">Blog</a>
-      <a href="https://miso-lab.booth.pm/" target="_blank">BOOTH</a>
-      <a href="https://voxel.henteko07.com" target="_blank">Voxel</a>
-    </div>
-  </main>
+      <section class="contact">
+        <div class="section-head">
+          <span class="idx">04</span>
+          <h2>Contact</h2>
+        </div>
+        <p>Please contact me if you have any job requests or inquiries.</p>
+        <a class="mail" href="mailto:henteko07@gmail.com">henteko07@gmail.com</a>
+      </section>
+
+      <section class="links-section">
+        <div class="section-head">
+          <span class="idx">05</span>
+          <h2>Links</h2>
+        </div>
+        <nav class="links">
+          <a href="https://github.com/henteko" target="_blank" rel="noopener">GitHub <span class="arrow">↗</span></a>
+          <a href="https://twitter.com/henteko07" target="_blank" rel="noopener">Twitter <span class="arrow">↗</span></a>
+          <a href="https://blog.henteko07.com" target="_blank" rel="noopener">Blog <span class="arrow">↗</span></a>
+          <a href="https://miso-lab.booth.pm/" target="_blank" rel="noopener">BOOTH <span class="arrow">↗</span></a>
+          <a href="https://voxel.henteko07.com" target="_blank" rel="noopener">Voxel <span class="arrow">↗</span></a>
+        </nav>
+      </section>
+    </main>
+
+    <footer id="footer"></footer>
+  </div>
 
   <script>
     var year = new Date().getFullYear();
-    var txt = document.createTextNode("© " + year + " henteko");
-    var p = document.createElement('p');
-    var footer = document.createElement('footer');
-
-    p.appendChild(txt);
-    footer.appendChild(p);
-    document.body.appendChild(footer);
+    document.getElementById('footer').textContent = "© " + year + " henteko";
   </script>
 </body>
 </html>
